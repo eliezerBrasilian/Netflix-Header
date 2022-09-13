@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex-navbar {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-navbar .n_image {
+  height: 50%;
+}
+.flex-navbar .netflix_image {
+  height: 80%;
+}
+.flex-navbar .nav_buttons > button {
+  font-size: 20px;
+  background-color: transparent;
+  color: red;
+  border-radius: 10px;
+  border-color: gray;
+  padding: 20px;
+}
+.flex-navbar .nav_buttons > button:hover {
+  border-color: red;
+  height: 90px;
+}
+.flex-navbar .netflix_image:hover {
+  height: 100%;
+}
+.flex-navbar .n_image:hover {
+  height: 80%;
+}
+@media (min-width: 290px) and (max-width: 536px) {
+  .flex-navbar {
+    height: 200px;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .flex-navbar .n_image {
+    height: 20%;
+    margin: 10px 0;
+  }
+  .flex-navbar .netflix_image {
+    height: 30%;
+  }
+  .flex-navbar .nav_buttons {
+    margin: 0 auto;
+  }
+  .flex-navbar .nav_buttons > button {
+    font-size: 15px;
+  }
+}
